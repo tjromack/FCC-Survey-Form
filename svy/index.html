@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>generic survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">generic survey form</h1>
+    <p id="description">a very special form to fill out</p>
+    <form id="survey-form">
+
+      <fieldset>
+        <label id="name-label">
+        <label for="name">name <input placeholder="enter your name" id="name" name="name" type="text" required /></label></label>
+        <label id="email-label">
+        <label for="email">email <input placeholder="enter your email" id="email" name="email" type="email" required /></label></label>
+        <label id="number-label">
+        <label for="number">number <input placeholder="enter a number 1-999"id="number" type="number" name="number" min="0" max="999" /></label>
+        </label>
+        <label for="dropdown">what are you doing here?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">checkin' it out</option>
+            <option value="2">lookin' around</option>
+            <option value="3">i'm actually leaving</option>
+            <option value="4">i'm not even sure</option>
+          </select>
+          </label>
+          </fieldset>
+          <fieldset>
+          morning or night?<label for="morning"><input id="morning" type="radio" name="am-or-pm" class="inline" value="morning" /> morning</label>
+        <label for="night"><input id="night" type="radio" name="am-or-pm" class="inline" value="night" /> night</label>
+        </fieldset>
+        <fieldset>languages of choice?
+<label for="english">
+          <input id="english" type="checkbox" required name="english" class="inline" value="english" />english
+          <label for="python">
+          <input id="python" type="checkbox" required name="python" class="inline" value="python" />python
+          <label for="SQL">
+          <input id="SQL" type="checkbox" required name="SQL" class="inline" value="SQL" />sQL
+          <label for="body">
+          <input id="body" type="checkbox" required name="body" class="inline" value="body" />body
+        </fieldset>
+        <fieldset>anything else to say?
+          <label for="bio">
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="we'll be talking soon..."></textarea>
+        </label>
+        </fieldset>
+      <input id ="submit" type="submit" value="Submit" />
+      </form>
+  </body>
+  </html>
